@@ -1,9 +1,11 @@
+/* fonts */
 @font-face {
   font-family: "sixtyfour-regular-variablefont";
   src: url("fonts/sixtyfour-regular-variablefont_bledscan-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
+/* styling til hele sitet */
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +26,7 @@ body {
   justify-content: center;
 }
 
+/* header start */
 header {
   position: fixed;
   top: 0;
@@ -68,7 +71,9 @@ header {
 .navbar a:hover::before {
   width: 100%;
 }
+/* header slut */
 
+/* burger menu start */
 .burger-menu {
   display: flex;
   flex-direction: column;
@@ -105,7 +110,9 @@ li a:hover {
   filter: contrast(3);
   color: #fff;
 }
+/* burger menu slut */
 
+/* categories site start */
 .categories {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -164,6 +171,7 @@ li a:hover {
   z-index: 999;
   color: #fff;
 }
+/* categories site slut */
 
 /* mobil-layout */
 @media only screen and (max-width: 768px) {
