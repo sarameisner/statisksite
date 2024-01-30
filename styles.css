@@ -13,6 +13,17 @@
   font-family: "sixtyfour-regular-variablefont";
 }
 
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
 body {
   min-height: 100vh;
   background: url(img/background2.webp);
@@ -126,7 +137,7 @@ li a:hover {
 }
 
 .category img {
-  max-width: 100%;
+  max-width: 40%;
   display: block;
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
@@ -135,7 +146,9 @@ li a:hover {
   transform: scale(1.1);
   filter: brightness(1.2);
 }
-
+.winter_img {
+  margin-left: 69%;
+}
 .category h2 {
   position: absolute;
   bottom: 50%;
@@ -172,6 +185,79 @@ li a:hover {
   color: #fff;
 }
 /* categories site slut */
+
+/* product list start */
+.grid_1-1-1 {
+  margin-top: 120px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 1.2rem;
+  animation: hopIn 0.5s infinite;
+}
+
+@keyframes hopIn {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+article {
+  position: relative;
+}
+
+article img {
+  display: block; /* Sørger for, at billedet har en korrekt størrelse og ikke påvirker layoutet */
+}
+
+article h2 {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Centrer teksten horisontalt */
+  margin: 0; /* Fjern overskydende margin for at sikre nøjagtig positionering */
+}
+
+.brand {
+  position: absolute;
+  top: 84%;
+  left: 83%;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.price {
+  position: absolute;
+  top: 88%;
+  left: 87%;
+  color: #fff;
+  font-size: 0.5rem;
+}
+
+.buy_btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #8b8fbc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-left: 38%;
+  margin-top: 5%;
+}
+
+.buy_btn:hover {
+  background-color: #6b6f9c;
+  color: #ffffff;
+}
 
 /* mobil-layout */
 @media only screen and (max-width: 768px) {
