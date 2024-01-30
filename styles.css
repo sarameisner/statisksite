@@ -129,6 +129,7 @@ li a:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   align-items: center;
+  margin-left: 10%;
 }
 
 .category {
@@ -139,6 +140,7 @@ li a:hover {
 .category img {
   max-width: 40%;
   display: block;
+  opacity: 0.6;
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
@@ -150,10 +152,17 @@ li a:hover {
   margin-left: 69%;
 }
 .spring_img {
+  margin-left: 59%;
+}
+.summer_img {
+  margin-left: 66%;
+}
+.fall_img {
+  margin-left: 52%;
 }
 .category h2 {
   position: absolute;
-  bottom: 50%;
+  bottom: 35%;
   left: 47%;
   transform: translate(-50%, 50%);
   font-size: 34px;
@@ -185,18 +194,25 @@ li a:hover {
   padding: 5px;
   z-index: 999;
   color: #fff;
+  font-size: x-small;
 }
 /* categories site slut */
 
 /* product list start */
 .grid_1-1-1 {
   margin-top: 120px;
+  padding-bottom: 20px;
+}
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 h2 {
   color: #fff;
   font-size: 1.2rem;
-  animation: hopIn 0.5s infinite;
+  animation: hopIn 0.9s infinite;
 }
 
 @keyframes hopIn {
@@ -214,7 +230,7 @@ article {
 }
 
 article img {
-  display: block; /* Sørger for, at billedet har en korrekt størrelse og ikke påvirker layoutet */
+  display: block;
 }
 
 article h2 {
@@ -222,8 +238,8 @@ article h2 {
   top: 2%;
   left: 2%;
   transform: translate(-50%, -50%);
-  text-align: center; /* Centrer teksten horisontalt */
-  margin: 0; /* Fjern overskydende margin for at sikre nøjagtig positionering */
+  text-align: center;
+  margin: 0;
 }
 
 .brand {
@@ -252,7 +268,7 @@ article h2 {
   background-color: #8b8fbc;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  margin-left: 38%;
+  margin-left: 26%;
   margin-top: 5%;
 }
 
@@ -260,9 +276,27 @@ article h2 {
   background-color: #6b6f9c;
   color: #ffffff;
 }
+.grid_1-1-1 article:nth-child(3) img {
+  filter: blur(5px);
+}
+
+.grid_1-1-1 article:nth-child(3)::before {
+  content: "Sold out";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  display: flex;
+}
+
+/* product list slut */
 
 /* mobil-layout */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .burger-menu {
     display: flex;
     order: 2;
@@ -276,6 +310,40 @@ article h2 {
 
   nav {
     display: none;
+  }
+  /* product site start */
+  .productlist_main {
+    margin-bottom: -1%;
+    padding: 2%;
+  }
+  .brand {
+    display: none;
+  }
+  .price {
+    display: none;
+  }
+  .buy_btn {
+    padding: 4px 6px;
+    font-size: 10px;
+    margin-left: 15%;
+    margin-top: 5%;
+  }
+  h2 {
+    font-size: 0.9rem;
+  }
+  /* product site slut */
+  .category img {
+    display: none;
+  }
+  .categories {
+    grid-template-columns: 1fr;
+    margin-left: 25%;
+  }
+
+  .category h2 {
+    position: static;
+    transform: none;
+    margin-bottom: 10px;
   }
 }
 
