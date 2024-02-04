@@ -245,7 +245,7 @@ article h2 {
 
 .brand {
   position: absolute;
-  top: 84%;
+  top: 82%;
   left: 83%;
   color: #fff;
   font-size: 1rem;
@@ -253,7 +253,7 @@ article h2 {
 
 .price {
   position: absolute;
-  top: 88%;
+  top: 86%;
   left: 87%;
   color: #fff;
   font-size: 0.5rem;
@@ -267,7 +267,7 @@ article h2 {
 }
 .procent {
   position: absolute;
-  top: 82%;
+  top: 80%;
   left: 4%;
   color: #fff;
   font-size: 1rem;
@@ -286,9 +286,6 @@ article h2 {
   text-decoration: line-through;
 }
 .discount {
-  position: absolute;
-  top: 88%;
-  left: 87%;
   color: #fff;
   font-size: 0.5rem;
 }
@@ -470,9 +467,7 @@ details[open] p {
   .price {
     display: none;
   }
-  .discount {
-    display: none;
-  }
+
   .brand_discount {
     display: none;
   }
